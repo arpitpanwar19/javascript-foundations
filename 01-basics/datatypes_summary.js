@@ -29,6 +29,33 @@
     }
   console.log(typeof myFunction) //it will say it "function" but real is: "object function"
 
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+  
+
+  // STACK (primitive) & HEAP (reference) { in stack we get copy of data but in heap we get reference to data}
+
+  //STACK EXAMPLE
+  let myName = "Arpit";
+  let firstName = myName;
+  firstName = "xyz"
+  console.log(myName);
+  console.log(firstName); // as its a copy so the change will hapen to it not to the og (i.e myName)
+
+  //HEAP EXAMPLE
+  let user1Data = {
+    userEmail: "arpit@microsoft.com",
+    userPassword: "Arpit@123"
+  }
+
+  let user2Data = user1Data;
+  user1Data.userPassword = "Arpit@19"
+
+  console.log(user1Data);
+  console.log(user2Data); //Here, both the outputs will be same because the value is changed from the real data not any copy.
+  
+
   //FOR DETAIL GO TO ECMA documentation!
   
+
 
