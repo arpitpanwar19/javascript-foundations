@@ -81,3 +81,37 @@ console.log(GravitasUser.hasOwnProperty("IsLOggedIn"));
 
 
 
+//DE-STRUCTURE OF OBJECTs
+
+const course = {
+    courseName: "B.Tech CSE",
+    courseDuration: "4 years",
+    courseBuyer: "Arpit Panwar"
+};
+
+const {courseBuyer: student} = course;
+
+console.log(student);
+
+//JSON format: 
+
+//it may lookalike an object but it doesn't have any specific name like objects, and here we have to use "" for both keys and values.
+// {
+//     "name": "Shubham",
+//     "profession": "Delhi Police",
+//     "location": "Meerut"
+// }
+
+//or
+
+[
+    {},
+    {},
+    {}
+]
+
+
+
+
+
+
