@@ -1,0 +1,48 @@
+<!-- The Document Object Model (DOM) connects web pages to scripts or programming languages by representing the structure of a document—such as the HTML representing a web page—in memory. Usually it refers to JavaScript, even though modeling HTML, SVG, or XML documents as objects are not part of the core JavaScript language.
+
+The DOM represents a document with a logical tree. Each branch of the tree ends in a node, and each node contains objects. DOM methods allow programmatic access to the tree. With them, you can change the document's structure, style, or content.
+
+Nodes can also have event handlers attached to them. Once an event is triggered, the event handlers get executed. -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body{
+            background-color: #212121;
+            color: #f1f1f1;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="test">
+        <h1 id="myName" class="heading">Arpit</h1>
+        <p class="tagline">Upcoming SWE</p>
+    </div>
+    <ul>
+        <li class="list-item">one</li>
+        <li class="list-item">two</li>
+        <li class="list-item">three</li>
+        <li class="list-item">four</li>
+    </ul>
+</body>
+</html>
+
+<!-- SOME IMP POINTS
+
+-> name.innerText = return all visible content.
+   wehereas
+   name.textContent = return all content wheteher its visible or even hid by any css decoration
+   and
+   name.innerHTML = returns exact code, even html tags.
+ 
+-> nodelist is very similar to array, & their properties are common as well but they are two different things.
+   (example: array has map, but nodelist don't)
+
+
+-> if we use getElementsByClassName then it will give "HTMLCollection" instead of nodelist.
+
+-> #To convert into array, use: Array.from('name')
+ 
